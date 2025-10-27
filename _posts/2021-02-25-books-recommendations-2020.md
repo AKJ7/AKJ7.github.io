@@ -9,8 +9,8 @@ pin: true
 math: true
 mermaid: true
 image:
-    path: img/stock-vector-math-doodle-elements-back-to-school-illustration-in-line.jpg
-    alt: Math symbols stock image
+    path: img/stock-photo-library-bookshelf-colorful-spines-warm-wood-neatly-organized-perfect-for-calm-reflection.jpg
+    alt: Bookshelf
 ---
 
 ## Summary  

@@ -14,7 +14,7 @@ Besides mathematics and mechanical engineering, I find problems arising from ele
 At 8 years old, i taught myself to solder and could finally fix diverse broken electronics in our little house.
 Most of my the solder went however into my consoles and game controllers, hehe :smirk:. 
 To the world of software development and computers, i was introduced at 11.
-A great hobby of mine thereafter was the developement of mobile app websites and webtemplates during the peak of the [Symbian era](https://en.wikipedia.org/wiki/Symbian) and the rise of smartphones.  
+A great hobby of mine thereafter was the developement of mobile app websites and webtemplates during the peak of the [Symbian](https://en.wikipedia.org/wiki/Symbian) era and the rise of smartphones.  
 
 During my studies, i worked as a software developer at a small firm in my city.
 There, i worked on every problem that landed on my desk, including data science, frontend/backend development, data engineering and embedded system development. 

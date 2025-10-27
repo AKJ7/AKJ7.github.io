@@ -16,7 +16,7 @@ image:
 The following is the list of university courses i took during my mathematics studies:
 
 ## Bachelor studies
-Specialization: Analysis
+Specialization: **Analysis**
 
 - Mathematical basis
     - Analysis 1
@@ -27,6 +27,7 @@ Specialization: Analysis
     - Discrete mathematics 2
     - Mathematical miniatures 1
     - Mathematical miniatures 2
+    - Corporate internship
 - Advanced modules
     - Analysis 3
     - Stochastic 1
@@ -36,7 +37,7 @@ Specialization: Analysis
 - Extension modules
     - Differential geometry
     - Partial differential equations 1
-    - Functional analysis
+    - Functional theory
 - Bachelor thesis
     - Bachelor seminar
     - Bachelor thesis: Applications of the Radon transform
@@ -46,9 +47,9 @@ Specialization: Analysis
     - Human biology
     - Marketing
 - Field of application (Mechnical engineering)
-    - Technical mechanic 1
-    - Technical mechanic 2
-    - Technical mechanic 3
+    - Technical mechanics 1
+    - Technical mechanics 2
+    - Technical mechanics 3
     - Fluid mechanics
     - Introduction to mechatronics
     - Internship to System dynamics
@@ -58,11 +59,12 @@ Specialization: Analysis
     - System dynamics
 
 ## Master studies 
-Specialization: Analysis, Numerics, Optimization
+Specialization: **Analysis**, **Numerics**, **Optimization**
 
 - Extension modules
     - Calculus of variations and optimization of Ordinary differential equations
     - Calculus of variations 1
+    - Geometry of the general relativity theory
 - Depth modules: Analysis
     - Calculus of variations 2
     - Partial differential equations 2
@@ -77,4 +79,4 @@ Specialization: Analysis, Numerics, Optimization
     - Variational inequalities
     - Variational inequalities seminar
 - Master thesis:
-    - Master thesis: unfiied Framework for the High Order Discretization of Variational Inequalities 
+    - Master thesis: unified Framework for the High Order Discretization of Variational Inequalities 
