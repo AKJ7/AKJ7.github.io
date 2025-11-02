@@ -20,12 +20,17 @@ My top 10 favorite books are the following:
 
 
 #### Bubble Tea - Assad Khan
+![Bubble Tea cover](https://media2.hugendubel.de/shop/coverscans/404/40480595_9783809444848_xl.jpg){: w="320" h="240"}
+
+For a bubble tead addict, this book helped me save money.
+It is a recipe book containing 50 differents bubble tea varieties to try to impress guesses.
 
 
 #### Backen - Ratgeber Gesundheit
 
 
 #### Pet Sematary - Stephen King 
+![Pet Sematary cover](https://upload.wikimedia.org/wikipedia/commons/2/24/Pet_Sematary_%281983%29_front_cover%2C_first_edition.jpg){: w="320" h="240"}
 
 
 #### And Then There were None - Agatha Christie
