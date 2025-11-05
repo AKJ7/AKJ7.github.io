@@ -119,5 +119,5 @@ This book goes through the rigourous theories of analytic and algebraic geometry
 #### Numerical Recipes - Third Edition - William H. Press, Saul A. Teukolsky, ...
 ![Numerical recipes cover](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/NumericalRecipes3rdEdCover.jpg/350px-NumericalRecipes3rdEdCover.jpg){: w="320" h="240" }
 
-Collected in this books are very written and interesting mathematical algorithms of diverse order
+Collected in this books are very written and interesting mathematical algorithms of diverse order.
 

@@ -9,3 +9,8 @@
 ';
 
 /* append your custom style below */
+
+// Hide the `Using the Chirpy theme from Jekyll` message in the footer
+footer > p:last-of-type {
+    display: none;
+}
