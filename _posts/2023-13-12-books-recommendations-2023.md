@@ -28,6 +28,10 @@ It is a recipe book containing 50 differents bubble tea varieties to try to impr
 
 #### Backen - Ratgeber Gesundheit
 
+To help impress a certain someone, i learned to bake.
+This book shows and explains in great detail how to bake cakes, biscuits, and diverse pasteries from ingedrients readily available
+at the neighboring stores. 
+
 
 #### Pet Sematary - Stephen King 
 ![Pet Sematary cover](https://upload.wikimedia.org/wikipedia/commons/2/24/Pet_Sematary_%281983%29_front_cover%2C_first_edition.jpg){: w="320" h="240"}
@@ -46,13 +50,16 @@ It is not a "Who didi it" type of story, but "who keeps doing it".
 
 
 #### How to Win Friends and influence People - Dale Carnegie
-![How to win friend and influence people](https://upload.wikimedia.org/wikipedia/en/3/33/How-to-win-friends-and-influence-people.jpg){: w="320" h="240" }
+![How to win friend and influence people cover](https://upload.wikimedia.org/wikipedia/en/3/33/How-to-win-friends-and-influence-people.jpg){: w="320" h="240" }
 
 A must read for the twenty-first century, teaches six technics to be liked by people; twelve ways to win people to own's way of thinking; nine ways to change people without arousing resentment.
 This book helps improve communication and likeliness.
 
 
 #### Die Eweer, das Land und Leute in Togo - J. Spieß 
+![Die Eweer, da Land und Leute in Togo Cover](https://m.media-amazon.com/images/I/61PdeGlXQnL._SY425_.jpg){: w="320" h="240" }
+
+
 This book describes the Ewe folk, my people, during the 19 century.
 It starts with the geographical and botany of the people and ends by describing the religion, the culture and society.
 For me, this book has been an essential source to understand my origins and its tradition before the impact of Western influences.
