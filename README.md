@@ -12,3 +12,7 @@ bundle install
 ```bash
 bundle exec jekyll serve
 ```
+or 
+```bash
+./tools/run.sh
+```
