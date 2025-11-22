@@ -26,11 +26,9 @@ It has given me the opportunity to bridge software and hardware development, to 
 
 When i don't work, i dance! Most of my evenings are spent at my dance-studio, jamming and grooving to Lindy Hop, Balboa, Solo Jazz, Charleston and Blues.
 The following contain a sample of what i dance to looks like:
-<iframe width="49%" height="240" src="https://www.youtube.com/embed/zpeUnWrteQM?si=YhnTgMvZSJF2Jinf" title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="49%" height="240" src="https://www.youtube.com/embed/gisafTmbVd8?si=kCSCQ5A9SjwllwDk" title="YouTube video player" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<iframe width="100%" height="480" src="https://www.youtube.com/embed/0VgkDNuIKn0?si=obkUjE9XDYDeofYR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+{% include embed/youtube.html id='zpeUnWrteQM?si=YhnTgMvZSJF2Jinf' %}
+{% include embed/youtube.html id='gisafTmbVd8?si=kCSCQ5A9SjwllwDk' %}
+{% include embed/youtube.html id='0VgkDNuIKn0?si=obkUjE9XDYDeofYR' %}
 
 I also enjoy hiking and reading.
 

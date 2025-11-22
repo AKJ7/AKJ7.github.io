@@ -7,6 +7,7 @@ gem "jekyll-theme-chirpy", "~> 7.4", ">= 7.4.1"
 gem "html-proofer", "~> 5.0", group: :test
 
 gem 'jemoji' # Emotes
+gem "jekyll-compose", group: [:jekyll_plugins] # New commands
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo", ">= 1", "< 3"

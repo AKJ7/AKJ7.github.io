@@ -12,253 +12,500 @@ image:
     path: https://fixr-cdn.fixr.co/images/event/2025-10/a4a596f55d3347fab3a057da43926bd6.jpeg
     alt: Solo jazz Cover
 ---
+<style>
+    body { counter-reset: summary; }
+    summary { counter-increment: summary; }
+    summary::before { content: counter(summary) " - " }
+</style>
 
 ## What is Solo Jazz dancing and Why?
-Solo Jazz dancing is a dynamik and expressive dance style, created in the early of the 20th centuries.
+Solo Jazz dancing is a dynamic and expressive dance style, created in the early of the 20th centuries.
 It originates from a mixture of afroamerican-dances, ballet and Jazz music.
 
-It is danced solo, hence it's name, but can be danced in duo or in groups.
+It is danced solo, in duo or in groups.
 Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, Balboa or even Hip Hop.
 ---
 
 ## Dance Steps in alphabetical order
 
-1. 123 Down 
+<details open> 
+    <summary> 123 Down </summary>
     {% include embed/youtube.html id='OGBI2HiKSKw?si=3S3RWHYHwCZeoMdc&amp;start=7' %}
-2. Apple Jack
+</details>
+<details>
+    <summary> Apple Jack </summary>
     {% include embed/youtube.html id='etpJuJJgCmc?si=zFCdT44DtvnhDgyM' %}
-3. Around The World 
+</details>
+<details> 
+    <summary> Apple Jack </summary>
+    {% include embed/youtube.html id='etpJuJJgCmc?si=zFCdT44DtvnhDgyM' %}
+</details>
+<details>
+    <summary> Around The World </summary>
     {% include embed/youtube.html id='Ym4hE9DVt9o?si=rkXf2aOQ_PvIsum6' %}
-4. Bee’s Knees
+</details>
+<details>
+    <summary> Bee’s Knees</summary>
     {% include embed/youtube.html id='tgz-di0lBRE?si=nG_Lh71JFbfeDpxR' %}
-5. Ball Change
+</details>
+<details>
+    <summary> Ball Change</summary>
     {% include embed/youtube.html id='MaHta4PaY_E?si=VwIdeaxFypLEeAha&amp;start=8' %}
-6. Birds
+</details>
+<details>
+    <summary> Birds</summary>
     {% include embed/youtube.html id='BHbYbS-eKJA?si=N2nNXyw8XkFGb2ry' %}
-7. Black Bottom
+</details>
+<details>
+    <summary> Black Bottom</summary>
     {% include embed/youtube.html id='wyo9Wi5RGQg?si=eAQvCe-tIEAzyQ6o' %}
-8. Boogie Back
+</details>
+<details>
+    <summary> Boogie Back</summary>
     {% include embed/youtube.html id='VopRacyrs7s?si=V7_aujTVAR9wQd_N' %}
-9. Boogie Drop
+</details>
+<details>
+    <summary> Boogie Drop</summary>
     {% include embed/youtube.html id='XTq3VEgHb6c' %}
-10. Boogie Step
+</details>
+<details>
+    <summary> Boogie Step</summary>
     {% include embed/youtube.html id='FV-ivQ9b7Lc?si=PJXheSc_uYZPL2F2' %}
-11. Box Step
+</details>
+<details>
+    <summary> Box Step</summary>
     {% include embed/youtube.html id='NZME_2WPi1Y?si=p4MCN3XbGOpAh71P' %}
-12. Break A Leg (Broken Legs)
+</details>
+<details>
+    <summary> Break A Leg (Broken Legs)</summary>
     {% include embed/youtube.html id='3CAkLs9PH8k?si=4L73UtGa6gCwNky7' %}
-13. Breeze Knees
+</details>
+<details>
+    <summary> Breeze Knees</summary>
     {% include embed/youtube.html id='xSJV1nhmQ60?si=Cb6xYr7JXRmH70Ql' %}
-1. Brush Step
+</details>
+<details>
+    <summary> Brush Step</summary>
     {% include embed/youtube.html id='ZngzSG9luq0?si=lcahbbjJhwUHO1fy' %}
-14. Bunny Hop
+</details>
+<details>
+    <summary> Bunny Hop</summary>
     {% include embed/youtube.html id='Awgeu1VNa1I?si=A9AT6R7k6eokDVbB' %}
-15. Cake Walk
+</details>
+<details>
+    <summary> Cake Walk</summary>
     {% include embed/youtube.html id='b2RzLyqhPwc?si=TZk3F-6rdiB88Jxi' %}
-16. Camel Walk
+</details>
+<details>
+    <summary> Camel Walk</summary>
     {% include embed/youtube.html id='0euQ7RPSNT8?si=sW1rpHUmsYIuZsH5' %}
-17. Charleston 20th
+</details>
+<details>
+    <summary> Charleston 20th</summary>
     {% include embed/youtube.html id='70utczwas7s?si=V4wTIa07fs1FG2VG' %}
-18. Charleston 30th
+</details>
+<details>
+    <summary> Charleston 30th</summary>
     {% include embed/youtube.html id='s58iTzznkp0?si=SaYVNUZ2Iw0UgcPy&amp;start=45' %}
-19. Charleston 40th (Lindy Charleston)
+</details>
+<details>
+    <summary> Charleston 40th (Lindy Charleston)</summary>
     {% include embed/youtube.html id='Z8Z6cWgqOq4?si=bXDdpqTmnd4qxUlN&amp;start=687' %}
-20. Chase
+</details>
+<details>
+    <summary> Chase</summary>
     {% include embed/youtube.html id='e65wLk_zBEU?si=SP2cSfcN5GGDjRGF' %}
-21. Corkscrew
+</details>
+<details>
+    <summary> Corkscrew</summary>
     {% include embed/youtube.html id='kaWIH94jMxw?si=vKuHZQ1yud4vgt-6' %}
-1. Cow Tail (Cartwheel)
+</details>
+<details>
+    <summary> Cow Tail (Cartwheel)</summary>
     {% include embed/youtube.html id='SjI0obFj2UA?si=bUFzxVaf2eW4bzeE' %}
-22. Crawls
+</details>
+<details>
+    <summary> Crawls</summary>
     {% include embed/youtube.html id='yd5KU14Vljc?si=dPk-If4ytSevAgkr&amp;start=41' %}
-23. Crazy Legs (Rebel legs)
+</details>
+<details>
+    <summary> Crazy Legs (Rebel legs)</summary>
     {% include embed/youtube.html id='rR_rx9tDonc?si=mki283vHOWBRsMCH' %}
-24. Cross Kicks
+</details>
+<details>
+    <summary> Cross Kicks</summary>
     {% include embed/youtube.html id='GbLl_t9LzMU?si=DhYE72o6FGAmG_E5' %}
-25. Cross Over
+</details>
+<details>
+    <summary> Cross Over</summary>
     {% include embed/youtube.html id='vvEkxUZhctM?si=FB19CNU9xB1dvnwN' %}
-27. Duck Steps
+</details>
+<details>
+    <summary> Duck Steps</summary>
     {% include embed/youtube.html id='r5d4yVpZg6k?si=c49Aa3dYMXoNpLCj' %}
-1. Duck Walk
+</details>
+<details>
+    <summary> Duck Walk</summary>
     {% include embed/youtube.html id='1QelJkRLF6o?si=pVXurP2KCEoafu-j&amp;start=36' %}
-1. Double Kicks
+</details>
+<details>
+    <summary> Double Kicks</summary>
     {% include embed/youtube.html id='1QelJkRLF6o?si=51LjJ-nJ2e2JwMjk&amp;start=6' %}
-28. Drunken Sailor
+</details>
+<details>
+    <summary> Drunken Sailor</summary>
     {% include embed/youtube.html id='1QelJkRLF6o?si=FBqHcmkB4VPYQEHD&amp;start=21' %}
-29. Eagle Slide
+</details>
+<details>
+    <summary> Eagle Slide</summary>
     {% include embed/youtube.html id='A4qQ04FdoB0?si=UlG-deairTKDSxym' %}
-30. Fall Off The Log (_+variations_)
+</details>
+<details>
+    <summary> Fall Off The Log (+variations) </summary>
     {% include embed/youtube.html id='FW7HBWBP8TM?si=fBonCkL-r4PPJbUQ' %}
-31. Fish Tail
+</details>
+<details>
+    <summary> Fish Tail</summary>
     {% include embed/youtube.html id='zgdRe3aptG8?si=lbaKqjXN3kE1JQ73' %}
-32. Flying Charleston
+</details>
+<details>
+    <summary> Flying Charleston</summary>
     {% include embed/youtube.html id='pAqpnyfBug0?si=XzFU5cSqjO7f-5v0' %}
-1. Full Break (_+variations_)
+</details>
+<details>
+    <summary> Full Break (+variations) </summary>
     {% include embed/youtube.html id='L9vAOWmIPl4?si=emlFUFAbf53QxQg5' %}
-33. Gaze Afar
+</details>
+<details>
+    <summary> Gaze Afar</summary>
     {% include embed/youtube.html id='GBhl9tjp4aQ?si=PTUc06yZ30Uek9e2' %}
-34. Jump Heel Click (Holubec)
+</details>
+<details>
+    <summary> Jump Heel Click (Holubec)</summary>
     {% include embed/youtube.html id='HgJYWrcmqzs?si=usuQeYxzM7xmWphX' %}
-35. Grapewine
+</details>
+<details>
+    <summary> Grapewine</summary>
     {% include embed/youtube.html id='Bc8-dT_JOOU?si=m0v_x3Md7_dpbWdj' %}
-36. Halliluya (Rocks)
+</details>
+<details>
+    <summary> Halliluya (Rocks)</summary>
     {% include embed/youtube.html id='MoeeoBI7nfg?si=JcKzUYHMXEGhMvGl' %}
-37. Half Break
+</details>
+<details>
+    <summary> Half Break</summary>
     {% include embed/youtube.html id='5ddyDadoFSY?si=lSAzq6IGfk1zZC7N' %}
-38. Hangman
+</details>
+<details>
+    <summary> Hangman</summary>
     {% include embed/youtube.html id='qUbl1zcA6sI?si=q8ezlegaQ9rnaRa3' %}
-39. Happy Feet
+</details>
+<details>
+    <summary> Happy Feet</summary>
     {% include embed/youtube.html id='DP_5JpZjVas?si=umsUwp5lNbUR2NkR' %}
-40. Helicopter Kicks (Hop Around)
+</details>
+<details>
+    <summary> Helicopter Kicks (Hop Around)</summary>
     {% include embed/youtube.html id='uYoZO4gsSKw?si=bugTs15LmMrE4KgG' %}
-41. Heels Click
+</details>
+<details>
+    <summary> Heels Click</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=LUvAy3b_QwI7uYWi&amp;start=116' %}
-42. Heels
+</details>
+<details>
+    <summary> Heels</summary>
     {% include embed/youtube.html id='tIPoFY80_Go?si=q54zeiM9WPTvMtZS&amp;start=204' %}
-43. Hips Grinding
+</details>
+<details>
+    <summary> Hips Grinding</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=wyPXN_i-Af57DsRO&amp;start=122' %}
-44. Hitchhiker
+</details>
+<details>
+    <summary> Hitchhiker</summary>
     {% include embed/youtube.html id='EfWfaQj6K7Q?si=NXyKX89WgRkqKsJb' %}
-45. Hot Potatoes
+</details>
+<details>
+    <summary> Hot Potatoes</summary>
     {% include embed/youtube.html id='QGdVts97Qgc?si=kq5xs3Li_j9VOJJf' %}
-46. Inside The Leg
+</details>
+<details>
+    <summary> Inside The Leg</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=91ePLspxaiuJNtMh&amp;start=130' %}
-47. Itches
+</details>
+<details>
+    <summary> Itches</summary>
     {% include embed/youtube.html id='RoNKBmz6QWE?si=7-dSKNnmGAeAiwMA' %}
-48. Jig walks
+</details>
+<details>
+    <summary> Jig walks</summary>
     {% include embed/youtube.html id='1zueY0EQ7zQ?si=eOBOXTo0FuTTUR2x' %}
-49. Jump
+</details>
+<details>
+    <summary> Jump</summary>
     {% include embed/youtube.html id='BtSeRG5N7eM?si=keb5p9G0d8SFM_1E' %}
-50. Jump Charleston (_+variations_)
+</details>
+<details>
+    <summary> Jump Charleston (+variations) </summary>
     {% include embed/youtube.html id='h8OByPdXMJc?si=HG6J-xJ9kT5DsJTs' %}
-51. Jump Kick Slide
+</details>
+<details>
+    <summary> Jump Kick Slide</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=D8_p_Brswb6dqZ3q&amp;start=143' %}
-52. Jump Toe Kick step
+</details>
+<details>
+    <summary> Jump Toe Kick step</summary>
     {% include embed/youtube.html id='aU440gla0z4?si=sV6XKHV2HmA2Uu4e' %}
-53. Kicks
+</details>
+<details>
+    <summary> Kicks</summary>
     {% include embed/youtube.html id='J-sSAi0eTQM?si=uZYl7thsBUAxjrjZ' %}
-1. Kick Ball Change Slide
+</details>
+<details>
+    <summary> Kick Ball Change Slide</summary>
     {% include embed/youtube.html id='MaHta4PaY_E?si=dpWQxUi2gw0HHxhZ&amp;start=76' %}
-54. Knee Slaps
+</details>
+<details>
+    <summary> Knee Slaps</summary>
     {% include embed/youtube.html id='f3q8F-CPrbc?si=5fZ5u_lzwnw3aWTu' %}
-55. Knee Rocks
-56. Lockstep Back
+</details>
+<details>
+    <summary> Knee Rocks </summary>
+</details>
+<details>
+    <summary> Lockstep Back</summary>
     {% include embed/youtube.html id='xgB4NdSvsCU?si=Q32pmTBjqIkRkNnO&amp;start=192' %}
-57. Lockstep Front (Cross Turn)
+</details>
+<details>
+    <summary> Lockstep Front (Cross Turn)</summary>
     {% include embed/youtube.html id='xgB4NdSvsCU?si=Vchim7Neu59IgaBs&amp;start=70' %}
-58. London Bridge
+</details>
+<details>
+    <summary> London Bridge</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=R5TIhBd92xi-lhAx&amp;start=169' %}
-59. Lowdown (Funky Butt)
+</details>
+<details>
+    <summary> Lowdown (Funky Butt)</summary>
     {% include embed/youtube.html id='2N09Utxt-ro?si=tkO_H1EMpNprd6L_&amp;start=64' %}
-60. Mambo Step
+</details>
+<details>
+    <summary> Mambo Step</summary>
     {% include embed/youtube.html id='ecR05qgf-Vs?si=9qUnbUZAwqlvzRxa' %}
-61. Mess Around
+</details>
+<details>
+    <summary> Mess Around</summary>
     {% include embed/youtube.html id='sWjgmwb-_tQ?si=UoN0-0xQADls0Q0Q' %}
-62. Moonslide
+</details>
+<details>
+    <summary> Moonslide</summary>
     {% include embed/youtube.html id='FAMsXWa2rDc?si=-mpishnbhIZDbmma' %}
-63. Opposites
+</details>
+<details>
+    <summary> Opposites</summary>
     {% include embed/youtube.html id='PtuVCUok4KA?si=ckeKLFK-fJiOjpyq' %}
-64. Over the Top (Ankle Step)
+</details>
+<details>
+    <summary> Over the Top (Ankle Step)</summary>
     {% include embed/youtube.html id='4ceB0gE5jQE?si=gq9clKJwdSEtTKbT' %}
-65. Paddle Turn
+</details>
+<details>
+    <summary> Paddle Turn</summary>
     {% include embed/youtube.html id='2N09Utxt-ro?si=pLTyRQ4wLKHY86fJ&amp;start=191' %}
-66. Pimp Walk
+</details>
+<details>
+    <summary> Pimp Walk</summary>
     {% include embed/youtube.html id='IJ75KHrQhEk?si=cvpsn8wPaD1LV_Ej' %}
-67. Pecking (Pecks)
+</details>
+<details>
+    <summary> Pecking (Pecks)</summary>
     {% include embed/youtube.html id='8aH6OZ1rF5E?si=Oq8pmEM0Qi5MsGpF' %}
-68. Pivots (Pivot steps)
+</details>
+<details>
+    <summary> Pivots (Pivot steps)</summary>
     {% include embed/youtube.html id='oxYeeqTm3H8?si=LskauGiBdsjDzfka' %}
-69. Poni Walk
+</details>
+<details>
+    <summary> Poni Walk</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=zKHJ_lZQ9ELuGzzY&amp;start=202' %}
-70. Precision Charleston
+</details>
+<details>
+    <summary> Precision Charleston</summary>
     {% include embed/youtube.html id='s58iTzznkp0?si=JOO4utX_UfxuPt6-&amp;start=45' %}
-71. Pushes
+</details>
+<details>
+    <summary> Pushes</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=Y9ybfuZVhRf7y7IX&amp;start=204' %}
-72. Ride The Pony
+</details>
+<details>
+    <summary> Ride The Pony</summary>
     {% include embed/youtube.html id='PFGr3pjsY6M?si=0ifRnjqBNGpXjrx3' %}
-1. Rythmes
+</details>
+<details>
+    <summary> Rythmes</summary>
     {% include embed/youtube.html id='I4-djKFcH8s?si=3DHZqOZLvoX55Iyl&amp;start=129' %}
-73. Rocks 
+</details>
+<details>
+    <summary> Rocks </summary>
     {% include embed/youtube.html id='MoeeoBI7nfg?si=tTh3QLBRpeQqQpcn' %}
-74. Run Run
+</details>
+<details>
+    <summary> Run Run</summary>
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=PFj46LgJk-E8pJ9_&amp;start=216' %}
-75. Rusty Dusty
+</details>
+<details>
+    <summary> Rusty Dusty</summary>
     {% include embed/youtube.html id='hzCojZQJ9kM?si=Wwm0uNq3qx5n-Jwt&amp;start=3' %}
-76. Sailor Kicks
+</details>
+<details>
+    <summary> Sailor Kicks</summary>
     {% include embed/youtube.html id='PdKBtJRYypU?si=IiDAxmZvH7Ie3BPY' %}
-77. Savoy Kicks
+</details>
+<details>
+    <summary> Savoy Kicks</summary>
     {% include embed/youtube.html id='PdKBtJRYypU?si=8OHxtzFhZ4LgIUEm' %}
-78. Scarecrow
+</details>
+<details>
+    <summary> Scarecrow</summary>
     {% include embed/youtube.html id='GrB56N_rfxI?si=C7VfDteigO_Zug59' %}
-79. Scissors
+</details>
+<details>
+    <summary> Scissors</summary>
     {% include embed/youtube.html id='dzYeF1KUxWI?si=dblwr2C2seewFEy4' %}
-80. Shim Sham Break
+</details>
+<details>
+    <summary> Shim Sham Break</summary>
     {% include embed/youtube.html id='ekM8gAITnIs?si=v329kozfB6bJIVMJ' %}
-81. Shim Sham Step
+</details>
+<details>
+    <summary> Shim Sham Step</summary>
     {% include embed/youtube.html id='sa5HSlTCwsM?si=XxfbVk9DJNQtgVF-' %}
-82. Skating
+</details>
+<details>
+    <summary> Skating</summary>
     {% include embed/youtube.html id='JVpoQG11cIM?si=WKMjyW9LJWo38W0i' %}
-83. Shish-Ka-Boom-Ba
+</details>
+<details>
+    <summary> Shish-Ka-Boom-Ba</summary>
     {% include embed/youtube.html id='T74PQoULAJU?si=Q7wgdF9WCR4v6BjB' %}
-84. Shish-Ka-Boom-Ba II
+</details>
+<details>
+    <summary> Shish-Ka-Boom-Ba II</summary>
     {% include embed/youtube.html id='9aXNA9WcFi4?si=xNDlGnzx2orrm-UA' %}
-85. Shoe-Shine
+</details>
+<details>
+    <summary> Shoe-Shine</summary>
     {% include embed/youtube.html id='hzCojZQJ9kM?si=m6f07nguws5a0LcY&amp;start=53' %}
-86. Shouts
+</details>
+<details>
+    <summary> Shouts</summary>
     {% include embed/youtube.html id='Y5vCK0BUPlg?si=OIkzAZTzjnPu7zRi' %}
-87. Shorty George
+</details>
+<details>
+    <summary> Shorty George</summary>
     {% include embed/youtube.html id='D1rMQQ40Q4A?si=uuTUt7QoU36U6y3X' %}
-88. Shorty George One Leg
+</details>
+<details>
+    <summary> Shorty George One Leg</summary>
     {% include embed/youtube.html id='O7LRbWprwPc?si=zLp5JBhSB0AwA5GP' %}
-89. Skips
+</details>
+<details>
+    <summary> Skips</summary>
     {% include embed/youtube.html id='1lRlxIuBqU8?si=dWCaDgQAlw6Nu46I' %}
-90. Slides
+</details>
+<details>
+    <summary> Slides</summary>
     {% include embed/youtube.html id='BPZLvsyDU6M?si=9GJ1ent1_iVOTghh' %}
-91. Slip Slop
+</details>
+<details>
+    <summary> Slip Slop</summary>
     {% include embed/youtube.html id='1lRlxIuBqU8?si=t28RiydmK_wq2GdG&amp;start=198' %}
-92. Snake Hips (Mooche)
+</details>
+<details>
+    <summary> Snake Hips (Mooche)</summary>
     {% include embed/youtube.html id='Byw6naGey3E?si=f7HpesuR2oQQQGKd' %}
-93. Snake Legs
+</details>
+<details>
+    <summary> Snake Legs</summary>
     {% include embed/youtube.html id='JIbv01_Wvfw?si=LI1DDWzh979t4fpQ' %}
-94. Shimmy
+</details>
+<details>
+    <summary> Shimmy</summary>
     {% include embed/youtube.html id='l-sEIyz8SAA?si=q5iFh9OchX8_K2zw' %}
-95. Spank The Baby
+</details>
+<details>
+    <summary> Spank The Baby</summary>
     {% include embed/youtube.html id='DggrHbTNcVE?si=Fuh9bUiy4xr4Zkj-' %}
-96. Stomps
+</details>
+<details>
+    <summary> Stomps</summary>
     {% include embed/youtube.html id='5VwHdzxHKJQ?si=euaIuP1RStDGRFA4' %}
-1. Step Somp Stomp
+</details>
+<details>
+    <summary> Step Somp Stomp</summary>
     {% include embed/youtube.html id='gUajPgz3Cls?si=6Q9Ebn8brnjrN28B' %}
-97. Stomp Off (_+variations_)
+</details>
+<details>
+    <summary> Stomp Off (+variations) </summary>
     {% include embed/youtube.html id='Jz_E6fw7aFY?si=vEah70x-6cPJjnqa' %}
-98. Suzie Q
+</details>
+<details>
+    <summary> Suzie Q</summary>
     {% include embed/youtube.html id='nzTsVb98_FQ?si=wRDMxuAZDi2uFKLl' %}
-99. Squat Charleston
+</details>
+<details>
+    <summary> Squat Charleston</summary>
     {% include embed/youtube.html id='yVoyAkDQnIE?si=ziCC_3325yNzVxHF' %}
-1. Sweep Charleston
+</details>
+<details>
+    <summary> Sweep Charleston</summary>
     {% include embed/youtube.html id='s58iTzznkp0?si=uGKrwxk6b1y-IejU&amp;start=18' %}
-1. Tappy The Cat
+</details>
+<details>
+    <summary> Tappy The Cat</summary>
     {% include embed/youtube.html id='Lg0O4NQ8_lQ?si=N1WQdAA6jeev6dxt' %}
-1. Tackie Annie
+</details>
+<details>
+    <summary> Tackie Annie</summary>
     {% include embed/youtube.html id='2G6QtRJqwtk?si=iFXjKkd5hso9PJ5F' %}
-1. Tic Tocs
+</details>
+<details>
+    <summary> Tic Tocs</summary>
     {% include embed/youtube.html id='yd5KU14Vljc?si=zN43xPssqnlqmKYx&amp;start=30' %}
-1. Tracking
+</details>
+<details> 
+    <summary> Tracking </summary>
     {% include embed/youtube.html id='Hrs8GupHv-o?si=40UINW1s_wDvhRxc' %}
-1. Traveling Charleston
+</details>
+<details> 
+    <summary> Traveling Charleston </summary>
     {% include embed/youtube.html id='QNt6biIaNkc?si=tVCpIeGR-aB6QuGJ' %}
-1. Trip Over
-1. Tripple Steps
+</details>
+<details>
+    <summary> Trip Over </summary>
+</details>
+<details> 
+    <summary> Tripple Steps </summary>
     {% include embed/youtube.html id='liAkfsd7qOk?si=H2goqCu5EWfzokKA' %}
-1. Triplets
+</details>
+<details> 
+    <summary> Triplets </summary>
     {% include embed/youtube.html id='I4-djKFcH8s?si=Is1T2a4Oy-6M4x_W&amp;start=160' %}
-1. Turkey Trots
+</details>
+<details> 
+    <summary> Turkey Trots </summary>
     {% include embed/youtube.html id='BV8wBILzzXc?si=uuTHQDtY8ENQhXH7' %}
-1. Twists
+</details>
+<details> 
+    <summary> Twists </summary>
     {% include embed/youtube.html id='M2M7uN7YyWg?si=ovo84YhmdaYbjdhA' %}
-1. Which-A-Ways
+</details>
+<details> 
+    <summary> Which-A-Ways </summary>
     {% include embed/youtube.html id='DCriIjuewFs?si=D0Z1nDdmy3IKXe70' %}
-1. Zigzag
+</details>
+<details> 
+    <summary> Zigzag </summary>
     {% include embed/youtube.html id='MmlUTM0rBtk?si=ZyUhP4PXMZ2cUC5e&amp;start=22' %}
+</details>
     
 
 ## Additional Literature  
