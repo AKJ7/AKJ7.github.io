@@ -1,6 +1,6 @@
 ---
 title: Math university courses
-description: University courses taking at the faculty of mathematics
+description: University courses taken at the faculty of mathematics
 author: AKJ7
 date: 2025-10-27 04:42:00 +0200
 categories: [Blogging, Studies, About]

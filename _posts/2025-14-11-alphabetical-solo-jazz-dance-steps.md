@@ -36,10 +36,6 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     <summary> Apple Jack </summary>
     {% include embed/youtube.html id='etpJuJJgCmc?si=zFCdT44DtvnhDgyM' %}
 </details>
-<details> 
-    <summary> Apple Jack </summary>
-    {% include embed/youtube.html id='etpJuJJgCmc?si=zFCdT44DtvnhDgyM' %}
-</details>
 <details>
     <summary> Around The World </summary>
     {% include embed/youtube.html id='Ym4hE9DVt9o?si=rkXf2aOQ_PvIsum6' %}
@@ -67,6 +63,10 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Boogie Drop</summary>
     {% include embed/youtube.html id='XTq3VEgHb6c' %}
+</details>
+<details>
+    <summary> Boogie Forward </summary>
+    {% include embed/youtube.html id='EXsiI3wIyFM' %}
 </details>
 <details>
     <summary> Boogie Step</summary>
