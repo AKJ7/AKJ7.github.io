@@ -73,7 +73,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='FV-ivQ9b7Lc?si=PJXheSc_uYZPL2F2' %}
 </details>
 <details>
-    <summary> Box Step</summary>
+    <summary>Box Step</summary>
     {% include embed/youtube.html id='NZME_2WPi1Y?si=p4MCN3XbGOpAh71P' %}
 </details>
 <details>
@@ -111,6 +111,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Charleston 40th (Lindy Charleston)</summary>
     {% include embed/youtube.html id='Z8Z6cWgqOq4?si=bXDdpqTmnd4qxUlN&amp;start=687' %}
+    {% include embed/youtube.html id='YAN5jYi5_PQ' %}
 </details>
 <details>
     <summary> Chase</summary>
@@ -133,8 +134,9 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='rR_rx9tDonc?si=mki283vHOWBRsMCH' %}
 </details>
 <details>
-    <summary> Cross Kicks</summary>
+    <summary>Cross Kicks / Run on the Log</summary>
     {% include embed/youtube.html id='GbLl_t9LzMU?si=DhYE72o6FGAmG_E5' %}
+    {% include embed/youtube.html id='Dk9AWrJ9lqc' %}
 </details>
 <details>
     <summary> Cross Over</summary>
@@ -147,6 +149,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Duck Walk</summary>
     {% include embed/youtube.html id='1QelJkRLF6o?si=pVXurP2KCEoafu-j&amp;start=36' %}
+    {% include embed/youtube.html id='wgxIyxC5yss' %}
 </details>
 <details>
     <summary> Double Kicks</summary>
@@ -183,6 +186,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Jump Heel Click (Holubec)</summary>
     {% include embed/youtube.html id='HgJYWrcmqzs?si=usuQeYxzM7xmWphX' %}
+    {% include embed/youtube.html id='S7Q37dVwvNY' %}
 </details>
 <details>
     <summary> Grapewine</summary>
@@ -213,8 +217,8 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=LUvAy3b_QwI7uYWi&amp;start=116' %}
 </details>
 <details>
-    <summary> Heels</summary>
-    {% include embed/youtube.html id='tIPoFY80_Go?si=q54zeiM9WPTvMtZS&amp;start=204' %}
+    <summary>Heels</summary>
+    {% include embed/youtube.html id='Hk62Fo2DoJg' %}
 </details>
 <details>
     <summary> Hips Grinding</summary>
@@ -261,6 +265,10 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='J-sSAi0eTQM?si=uZYl7thsBUAxjrjZ' %}
 </details>
 <details>
+    <summary>Kick Around</summary>
+    {% include embed/youtube.html id='s1KaKvjMiKA' %}
+</details>
+<details>
     <summary> Kick Ball Change Slide</summary>
     {% include embed/youtube.html id='MaHta4PaY_E?si=dpWQxUi2gw0HHxhZ&amp;start=76' %}
 </details>
@@ -270,6 +278,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 </details>
 <details>
     <summary> Knee Rocks </summary>
+    {% include embed/youtube.html id='Jn6Ba6r8wVE' %}
 </details>
 <details>
     <summary> Lockstep Back</summary>
@@ -285,7 +294,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 </details>
 <details>
     <summary> Lowdown (Funky Butt)</summary>
-    {% include embed/youtube.html id='2N09Utxt-ro?si=tkO_H1EMpNprd6L_&amp;start=64' %}
+    {% include embed/youtube.html id='3tSO1-u2EkY' %}
 </details>
 <details>
     <summary> Mambo Step</summary>
@@ -310,6 +319,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Paddle Turn</summary>
     {% include embed/youtube.html id='2N09Utxt-ro?si=pLTyRQ4wLKHY86fJ&amp;start=191' %}
+    {% include embed/youtube.html id='fDuQanZXxcQ' %}
 </details>
 <details>
     <summary> Pimp Walk</summary>
@@ -328,12 +338,13 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='K8yKg7GJ8Ks?si=zKHJ_lZQ9ELuGzzY&amp;start=202' %}
 </details>
 <details>
-    <summary> Precision Charleston</summary>
-    {% include embed/youtube.html id='s58iTzznkp0?si=JOO4utX_UfxuPt6-&amp;start=45' %}
+    <summary>Precision Charleston</summary>
+    {% include embed/youtube.html id='s58iTzznkp0?si=JOO4utX_UfxuPt6-&amp;start=57' %}
 </details>
 <details>
-    <summary> Pushes</summary>
-    {% include embed/youtube.html id='K8yKg7GJ8Ks?si=Y9ybfuZVhRf7y7IX&amp;start=204' %}
+    <summary>Pushes</summary>
+    {% include embed/youtube.html id='FUHlyqlCLv8' %}
+    {% include embed/youtube.html id='Q4Wibuv72F8' %}
 </details>
 <details>
     <summary> Ride The Pony</summary>
@@ -354,6 +365,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Rusty Dusty</summary>
     {% include embed/youtube.html id='hzCojZQJ9kM?si=Wwm0uNq3qx5n-Jwt&amp;start=3' %}
+    {% include embed/youtube.html id='7-O7RyptKtY' %}
 </details>
 <details>
     <summary> Sailor Kicks</summary>
@@ -361,7 +373,7 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 </details>
 <details>
     <summary> Savoy Kicks</summary>
-    {% include embed/youtube.html id='PdKBtJRYypU?si=8OHxtzFhZ4LgIUEm' %}
+    {% include embed/youtube.html id='nME9DIYNIEw' %}
 </details>
 <details>
     <summary> Scarecrow</summary>
@@ -402,10 +414,6 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
 <details>
     <summary> Shorty George</summary>
     {% include embed/youtube.html id='D1rMQQ40Q4A?si=uuTUt7QoU36U6y3X' %}
-</details>
-<details>
-    <summary> Shorty George One Leg</summary>
-    {% include embed/youtube.html id='O7LRbWprwPc?si=zLp5JBhSB0AwA5GP' %}
 </details>
 <details>
     <summary> Skips</summary>
@@ -472,12 +480,16 @@ Moreover, it finds usage in various other dance forms such as Lindy Hop, Blues, 
     {% include embed/youtube.html id='yd5KU14Vljc?si=zN43xPssqnlqmKYx&amp;start=30' %}
 </details>
 <details> 
-    <summary> Tracking </summary>
+    <summary> Tracking / Truckin' </summary>
     {% include embed/youtube.html id='Hrs8GupHv-o?si=40UINW1s_wDvhRxc' %}
 </details>
 <details> 
     <summary> Traveling Charleston </summary>
     {% include embed/youtube.html id='QNt6biIaNkc?si=tVCpIeGR-aB6QuGJ' %}
+</details>
+<details> 
+    <summary> Trenches </summary>
+    {% include embed/youtube.html id='Zuo6e8aILIY' %}
 </details>
 <details>
     <summary> Trip Over </summary>

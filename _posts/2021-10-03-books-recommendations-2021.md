@@ -93,12 +93,21 @@ It is a must-read for every machine-learning enthusiat.
 
 
 #### Pattern Recognition - Sergios Theodoridis 
-![Pattern Recognition](https://www.oreilly.com/covers/urn:orm:book:9781597492720/400w/){: w="320" h="240" }
+![Pattern Recognition Cover](https://www.oreilly.com/covers/urn:orm:book:9781597492720/400w/){: w="320" h="240" }
 
 With another amazing book, Mr. Theodoridis considers classical and current theory, as well as practice of supervised, unsuppervised and semi-supervised pattern recognition, to build a complete background for professionals and students of engineering.  
 
 Concepts are readily and throughoutly explained, attached to clear and understandable images and graphs.
 This book is the perfect introduction into the theory of machine lerning and neural networks.
+
+
+#### The Linux Programming Interface - Michael Kerrisk
+![The Linux Programming Interface Cover](https://man7.org/tlpi/cover/TLPI-front-cover.png){: w="320" h="240" }
+
+The most comprehensive description of Linux and UNIX system programming that money can buy.
+
+It goes through the fundamentals of working with the intrinsic Linux/UNIX programming API: From managing file I/O to the fundamentals of TCP/IP Networks and of shared libraries, the frontend of the kernel is explained.
+It always provides a great insight into general concurrent programmig and Inter-Process-Communication methods in C. 
 
 
 > More books will be added in the future ... Can't find the rest of my list.
