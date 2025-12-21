@@ -110,5 +110,10 @@ It goes through the fundamentals of working with the intrinsic Linux/UNIX progra
 It always provides a great insight into general concurrent programmig and Inter-Process-Communication methods in C. 
 
 
-> More books will be added in the future ... Can't find the rest of my list.
-{: .prompt-warning }
+
+#### Mathematical Methods of Classical Mechanics - V. I. Arnold
+![Mathematical methods of classical mechanics cover](https://m.media-amazon.com/images/I/614sXJpG68L._SL1246_.jpg){: w="320" h="240" }
+
+F. Klein: "A physicist, for his problems, can extract from these theories only very little, and an engineer nothing".
+In this book the limits of classical technical mechanics are studied in mechanical engineeing are broken and explained from the point of view of mathematics.
+From Newton, to Lagrange, to Hamilton mechanics, various mechanics systems are described using differential manifolds, Lie Algebras, Symplectic geometries, etc.  

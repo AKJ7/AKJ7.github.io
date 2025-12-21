@@ -23,7 +23,7 @@ My top 10 favorite books are the following:
 ![Bubble Tea cover](https://media2.hugendubel.de/shop/coverscans/404/40480595_9783809444848_xl.jpg){: w="320" h="240"}
 
 For a bubble tead addict, this book helped me save money.
-It is a recipe book containing 50 differents bubble tea varieties to try to impress guesses.
+It is a recipe book containing 50 differents bubble tea varieties to try to impress guests.
 
 
 #### Backen - Ratgeber Gesundheit
