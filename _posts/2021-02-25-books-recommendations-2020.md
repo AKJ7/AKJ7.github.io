@@ -7,6 +7,7 @@ categories: [Blogging, Books, About]
 tags: [about, books]
 math: true
 mermaid: true
+pin: false
 image:
     path: img/stock-photo-library-bookshelf-colorful-spines-warm-wood-neatly-organized-perfect-for-calm-reflection.jpg
     alt: Bookshelf

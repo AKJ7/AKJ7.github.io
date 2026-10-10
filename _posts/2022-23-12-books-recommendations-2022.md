@@ -5,7 +5,7 @@ author: AKJ7
 date: 2022-12-23 04:42:00 +0200
 categories: [Blogging, Books, About]
 tags: [about, books]
-pin: true
+pin: false
 math: true
 mermaid: true
 image:

@@ -5,7 +5,7 @@ author: AKJ7
 date: 2025-10-27 04:42:00 +0200
 categories: [Blogging, Studies, About]
 tags: [about]
-pin: true
+pin: false
 math: true
 mermaid: true
 image:

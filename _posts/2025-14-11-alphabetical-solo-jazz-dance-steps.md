@@ -5,7 +5,7 @@ author: AKJ7
 date: 2025-11-14 21:10:00 +0200
 categories: [Blogging, Dance, Solo Jazz]
 tags: [dance]
-pin: true
+pin: false
 math: true
 mermaid: true
 image:
