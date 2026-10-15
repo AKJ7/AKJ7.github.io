@@ -2,9 +2,9 @@
 title: "pytest-torch: Testing PyTorch Models Like You Mean It"
 date: 2026-10-14 22:00:00 +0200
 categories: [Machine Learning, PyTorch]
-tags: [pytorch, testing, pytest, deep-learning, open-source]
+tags: [pytorch, testing, pytest, deep-learning, open-source, training]
 toc: true
-description: "A pytest plugin for the tests every model needs: inference contracts, invariance, deployment parity, checkpoints, dataset metrics with confidence intervals, and zero-code testing of any model."
+description: "A pytest plugin for the tests every model and training loop needs: inference contracts, invariance, deployment parity, checkpoint resume, gradient accumulation, dataset metrics with confidence intervals, and zero-code testing of any model."
 image:
     path: img/pytest-torch-cover.png
     alt: pytest-torch logo
@@ -15,6 +15,9 @@ Most bugs in deep learning code don't crash. A pooling layer averages over paddi
 Ordinary unit tests rarely catch these, because writing the right test is tedious: seeding, building inputs, running on every device, choosing tolerances, comparing nested outputs, and then turning `assert torch.allclose(a, b)` failing into something you can act on.
 
 [pytest-torch](https://github.com/AKJ7/pytest-torch) is a pytest plugin that turns those tests into one-liners. This post walks through what it catches, with real outputs from the library.
+
+> Updated for pytest-torch 1.1: a new section on [testing the training loop](#5-testing-the-training-loop) (checkpoint resume, gradient accumulation, mixed precision, the Lightning and Hugging Face trainers), tiny versions of Hugging Face architectures, benchmark suites, and markers for memory leaks and per-device gaps.
+{: .prompt-info }
 
 ```bash
 pip install pytest-torch
@@ -40,6 +43,24 @@ torch-model::test_gradients_finite[hf:google-bert/bert-base-uncased-cpu] PASSED
 ```
 
 The model is built from its config with random weights (only `config.json` is downloaded), inputs are inferred (padded `input_ids` and `attention_mask` for a text model), and a suite of checks runs on every available device. It works the same with `timm:resnet50`, `torchvision:mobilenet_v3_small`, or your own `mypackage.models:Classifier`. When inputs can't be inferred, it says how to provide them.
+
+Big models are slow to test on a CPU, even with random weights. `hf-tiny:` keeps the architecture and shrinks it to 2 layers of width 64, so a 7-billion-parameter model goes through the same suite in seconds:
+
+```bash
+pytest --torch-model=hf-tiny:Qwen/Qwen2.5-7B
+```
+
+```
+pytest-torch: testing hf-tiny:Qwen/Qwen2.5-7B (random-init); checks: contract, invariance, checkpoint, gradients
+torch-model::test_builds[hf-tiny:Qwen/Qwen2.5-7B-cpu] PASSED
+torch-model::test_inference_contract[hf-tiny:Qwen/Qwen2.5-7B-cpu] PASSED
+torch-model::test_invariance[hf-tiny:Qwen/Qwen2.5-7B-cpu] PASSED
+torch-model::test_checkpoint_roundtrip[hf-tiny:Qwen/Qwen2.5-7B-cpu] PASSED
+torch-model::test_gradients_finite[hf-tiny:Qwen/Qwen2.5-7B-cpu] PASSED
+======================= 5 passed, 2 deselected in 3.78s ========================
+```
+
+In tests, `model_loader.hf_tiny("Qwen/Qwen2.5-7B")` gives the same shrunk model, with weights fixed by a seed. Grouped-query attention, mixture-of-experts layers and nested vision-language configs are shrunk consistently.
 
 ## 2. A bug you won't see in the loss curve
 
@@ -213,16 +234,119 @@ class TestClassifier(ModelSuite):
 
 Each check becomes a test on every device. Projects with many YAML configs, one per experiment, can run the whole suite once per config by setting `configs = sorted(Path("configs").glob("*.yaml"))`. The training checks include `assert_frozen`, which catches a "frozen" encoder that still drifts, either because the optimizer's weight decay moves it or because its BatchNorm statistics keep updating in training mode.
 
-## 5. Beyond classifiers
+## 5. Testing the training loop
+
+A model can pass every inference test while the code that trains it is broken. These bugs are the most expensive kind: they show up as a run that resumed from a checkpoint and quietly trained worse, or a gradient-accumulation setting that changed the effective learning rate. pytest-torch runs *your* training step for a few seeded steps and checks what it does.
+
+You describe your training code with two functions: one that builds the model, optimizer and scheduler, and your training step. Here the checkpoint code under test forgets the optimizer:
+
+```python
+from torch.nn import functional as F
+from pytest_torch import TrainingSetup, assert_resume_equivalent
+
+
+def make_setup():
+    model = nn.Sequential(nn.Linear(16, 32), nn.ReLU(), nn.Linear(32, 4))
+    optimizer = torch.optim.AdamW(model.parameters(), lr=3e-3)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=2, gamma=0.5)
+    return TrainingSetup(model, optimizer, schedulers=scheduler)
+
+
+def train_step(setup, batch):
+    x, y = batch
+    loss = F.cross_entropy(setup.model(x), y)
+    loss.backward()
+    setup.optimizer.step()
+    setup.optimizer.zero_grad()
+    setup.scheduler.step()
+    return loss
+
+
+def save_checkpoint(setup, path):          # the code under test: it forgets the optimizer
+    torch.save({"model": setup.model.state_dict(),
+                "scheduler": setup.scheduler.state_dict()}, path)
+
+
+def load_checkpoint(setup, path):
+    state = torch.load(path)
+    setup.model.load_state_dict(state["model"])
+    setup.scheduler.load_state_dict(state["scheduler"])
+
+
+assert_resume_equivalent(make_setup, batches, train_step, steps=8,
+                         save=save_checkpoint, load=load_checkpoint)
+```
+
+The check trains 8 steps without interruption. Separately, it trains 4 steps, saves with your function, builds a fresh setup, loads with your function and trains the last 4 steps. Then it compares the two runs:
+
+```
+Resuming from a checkpoint saved after step 4 does not reproduce the uninterrupted run:
+  first divergence at step 5: loss 1.34897 after resuming, 1.34272 without interruption
+  final weights: 4 tensor(s) differ (...)
+State after loading vs when saving:
+  optimizer 'optimizer': state differs (e.g. state[0]['step'] missing): optimizer state not restored, so momentum, Adam moments and step counts restart
+  optimizer 'optimizer' group 0: lr 0.003 after loading, 0.00075 when saved
+  random number generators (python, torch, numpy) not restored: this matters when training draws random numbers (dropout, augmentation, sampling)
+Hint: save and restore model, optimizer, scheduler, GradScaler and RNG state together (see save_training_state).
+```
+*(abridged)*
+
+The second line is a subtle one: the scheduler *was* restored, but the current learning rate lives in the optimizer, so after loading it's back at its initial value until the scheduler next steps.
+
+Gradient accumulation gets the same treatment. `assert_accumulation_equivalent` compares four micro-batches with one full batch and says what's wrong, not just that something is:
+
+```
+Gradient accumulation over 4 micro-batches differs from one full-batch step (cycle 1 of 2):
+  0.weight: 512/512 elements differ beyond tolerance (rtol=0.0001, atol=1e-06)
+  ...
+Likely cause:
+  gradients are 4x the full-batch gradients: the loss isn't divided by accumulation_steps
+```
+*(abridged)*
+
+It also recognizes gradients that are never reset between cycles, and an optimizer stepping at the wrong micro-batch. The rest of the training checks follow the same idea:
+
+- **Telemetry.** `training_runner.run(make_setup, batches, train_step)` records the loss, gradient norm, update size and learning rate of every step, and `run.assert_healthy()` fails on non-finite values, skipped updates, exploding gradients or a learning rate of zero, printing the steps around the problem.
+- **Optimizer coverage.** `assert_optimizer_coverage` finds parameters that no optimizer updates, parameters in two parameter groups, and the classic: an optimizer built before the model was deep-copied, which updates a model nobody uses.
+- **Mixed precision.** `assert_mixed_precision_training` catches `optimizer.step()` bypassing the GradScaler, a missing `scaler.update()`, gradient clipping before `unscale_` and runs that keep overflowing.
+- **Lightning and the Hugging Face Trainer.** `from_lightning` puts a `LightningModule` under the same checks, and the `lightning_trainer` and `hf_trainer` fixtures give trainers set up for tests: the test's device and seed, a few steps, no logs or checkpoints on disk.
+
+```python
+import copy
+
+
+def test_fine_tuning(hf_trainer, model_loader, make_batch):
+    model = copy.deepcopy(model_loader.hf_tiny(
+        "google-bert/bert-base-uncased", auto_class="AutoModelForSequenceClassification", num_labels=2))
+    data = make_batch.tokens(32, 16, vocab_size=model.config.vocab_size, labels=2)
+    trainer = hf_trainer(model, data, max_steps=10, learning_rate=1e-3)
+    trainer.train()
+    losses = [log["loss"] for log in trainer.state.log_history if "loss" in log]
+    assert len(losses) == 10
+```
+
+`make_batch.tokens` builds token batches of mixed lengths, so every batch has padding, which is where masking bugs hide.
+
+## 6. Beyond classifiers
 
 A few more things that turned out to matter in practice:
 
 - **Streaming and stateful models.** `assert_streaming_equivalent` checks that a model run chunk by chunk agrees with one full pass, that a reset really resets, and that two requests interleaved with separate states don't contaminate each other. The expected equivalence is yours to declare, because some models intentionally behave differently when chunked (look-ahead, warm-up).
 - **Training sanity.** Finite gradients, every parameter receiving a gradient, the loss going down, overfitting a single batch, and `assert_gradcheck` for hand-written backward passes, a natural companion to [custom loss functions]({% post_url 2026-10-10-custom-loss-functions-pytorch %}).
-- **Failure reproduction.** `pytest --torch-repro-dir=repro` saves the seed, the inputs and the environment of every failing test; `pytest --torch-repro=repro/<test>.pt` replays it bit for bit on another machine, or on the CPU when CI failed on a GPU.
-- **Devices and dtypes.** Tests run on CPU, CUDA, Intel XPU and Apple MPS, optionally across dtypes, with tolerances that follow the dtype and can be set once in `pyproject.toml`.
+- **Memory leaks.** `@pytest.mark.torch_memory_leak` runs a test several times and fails when every run leaves more behind, naming what accumulates. The usual culprit is keeping the loss instead of its value:
 
-## 6. Design choices
+  ```
+  Memory leak: every run of the test leaves more behind
+    live tensors after each run: 3, 4, 5, 6, 7, 8
+    new: () float32 on cpu with an autograd graph (MeanBackward0), held by a list of 6 item(s)
+  Hint: tensors that still hold their autograd graph are being kept: store loss.item() or loss.detach() instead of loss.
+  ```
+  *(abridged)*
+- **Benchmarks.** A `BenchmarkSuite` measures latency, throughput, peak memory and compilation time over batch sizes, dtypes and `torch.compile`, compares them with per-machine baselines, and prints one table at the end. Benchmarks only run with `pytest --torch-benchmark`, so they never slow down the normal suite.
+- **Failure reproduction.** `pytest --torch-repro-dir=repro` saves the seed, the inputs and the environment of every failing test; `pytest --torch-repro=repro/<test>.pt` replays it bit for bit on another machine, or on the CPU when CI failed on a GPU.
+- **Devices and dtypes.** Tests run on CPU, CUDA, Intel XPU and Apple MPS, optionally across dtypes, with tolerances that follow the dtype and can be set once in `pyproject.toml`. Markers replace hand-written `skipif`s: `torch_requires(cuda=True, torch=">=2.4")`, `torch_skip_on("mps")`, and `torch_xfail_on("mps", raises=NotImplementedError)`, a strict expected failure that tells you when a torch release fixes the operation.
+
+## 7. Design choices
 
 A few decisions shaped the library:
 
@@ -234,12 +358,12 @@ A few decisions shaped the library:
 
 ## Limitations
 
-pytest-torch tests models; it isn't a training framework or a benchmark suite. Some checks depend on the PyTorch version: `torch.export` checks skip on torch 2.0, and AOTInductor needs torch 2.6 and a C++ compiler. Host-device synchronization checks are CUDA-only. Zero-code testing covers common model shapes; anything more specific is a `ModelSuite` away.
+pytest-torch tests models and the code that trains them; it isn't a training framework. Its training checks run a few steps on small batches, which finds wiring bugs, not convergence problems, and distributed training isn't covered yet. Some checks depend on the PyTorch version: `torch.export` checks skip on torch 2.0, and AOTInductor needs torch 2.6 and a C++ compiler. Host-device synchronization checks are CUDA-only, and so are peak-memory budgets (CUDA and XPU). Zero-code testing covers common model shapes; anything more specific is a `ModelSuite` away.
 
 ## Get started
 
 ```bash
-pip install pytest-torch
+pip install pytest-torch                      # or "pytest-torch[hf]", "pytest-torch[lightning]"
 pytest --torch-model=mypackage.models:MyModel
 ```
 
