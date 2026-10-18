@@ -231,3 +231,4 @@ jekyll_compose:
 
 plugins:
     - jemoji
+    - jekyll-sitemap
