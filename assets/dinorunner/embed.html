@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dinorunner — live WebAssembly demo</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 12px;
+      box-sizing: border-box;
+      background: transparent;
+      color: #6b6b6b;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+    canvas {
+      width: 640px;
+      max-width: 100%;
+      height: auto;
+      background: #fff;
+      border: 1px solid rgba(128, 128, 128, 0.35);
+      border-radius: 8px;
+      image-rendering: pixelated;
+      touch-action: none;
+      transition: filter 1.5s ease;
+    }
+    /* Night mode: the game toggles this class, inverting the canvas like the original. */
+    canvas.inverted {
+      filter: invert(1);
+    }
+    p {
+      margin: 0;
+      font-size: 13px;
+      text-align: center;
+    }
+    kbd {
+      font-family: inherit;
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      padding: 0 5px;
+    }
+    #fallback {
+      display: none;
+      max-width: 640px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="dinorunner" width="640" height="190" tabindex="0"></canvas>
+  <p>Click the game first, then press <kbd>Space</kbd> or <kbd>&uarr;</kbd> to jump, <kbd>&darr;</kbd> to duck. Tap on touch screens.</p>
+  <p id="fallback">This browser could not start the WebAssembly demo. Try a recent desktop browser, or build and run it locally from the repository.</p>
+  <script type="module">
+    import init from "./pkg/dinorunner_web.js";
+    init()
+      .then(() => {
+        // Give the canvas focus so keyboard controls work straight away inside the iframe.
+        const canvas = document.getElementById("dinorunner");
+        if (canvas) {
+          canvas.focus();
+          canvas.addEventListener("pointerdown", () => canvas.focus());
+        }
+      })
+      .catch((error) => {
+        console.error("Could not start dinorunner:", error);
+        document.getElementById("fallback").style.display = "block";
+      });
+  </script>
+</body>
+</html>
